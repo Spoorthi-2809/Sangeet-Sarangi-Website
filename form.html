@@ -12,10 +12,6 @@
 
 <link rel="icon" type="image/png" href="images/logo.png">
 
-<!-- MAIN CSS -->
-
-<link rel="stylesheet" href="css/style.css">
-
 <!-- FONT AWESOME -->
 
 <link rel="stylesheet"
@@ -358,7 +354,23 @@ Sangeet Sarangi Keyboard Classes 🎹
 
 </div>
 
-<form method="GET" action="/success/">
+<!-- FORM -->
+
+<form
+action="https://formsubmit.co/YOUR_EMAIL@gmail.com"
+method="POST"
+>
+
+<!-- DISABLE CAPTCHA -->
+
+<input type="hidden" name="_captcha" value="false">
+
+<!-- SUCCESS PAGE REDIRECT -->
+
+<input
+type="hidden"
+name="_next"
+value="https://YOUR-VERCEL-DOMAIN.vercel.app/success/">
 
 <div class="form-grid">
 
@@ -374,7 +386,7 @@ Sangeet Sarangi Keyboard Classes 🎹
 
 <input
 type="text"
-name="student_name"
+name="Student Name"
 required
 minlength="3"
 pattern="[A-Za-z ]+"
@@ -396,7 +408,7 @@ placeholder="Enter Full Name">
 
 <input
 type="number"
-name="age"
+name="Age"
 required
 min="4"
 max="80"
@@ -418,7 +430,7 @@ placeholder="Enter Age">
 
 <input
 type="text"
-name="place"
+name="Place"
 required
 placeholder="Enter Your Place">
 
@@ -438,7 +450,7 @@ placeholder="Enter Your Place">
 
 <input
 type="email"
-name="email"
+name="Email"
 required
 placeholder="example@gmail.com">
 
@@ -458,7 +470,7 @@ placeholder="example@gmail.com">
 
 <input
 type="tel"
-name="phone"
+name="Phone Number"
 required
 maxlength="10"
 pattern="[0-9]{10}"
@@ -478,7 +490,7 @@ placeholder="10 Digit Number">
 
 <i class="fas fa-clock"></i>
 
-<select name="batch_timing" required>
+<select name="Preferred Batch" required>
 
 <option value="">Select Batch</option>
 
